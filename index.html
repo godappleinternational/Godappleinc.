@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Godapple Inc. - Advanced Tech Services</title>
+  <link rel="icon" href="image/11.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+
+  <!-- GSAP for advanced animations -->
+  <!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- GSAP ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Your custom JS -->
+<script src="scripts.js" defer></script>
+
+</head>
+<body>
+  <!-- Custom Cursor Elements -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <header class="header">
+    <div class="logo">Godapple Inc.</div>
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <span class="nav-underline"></span>
+    </nav>
+    <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+  </header>
+
+  <main>
+    <section id="home" class="section home-section">
+      <h1>Welcome to Godapple Inc.</h1>
+      <p>
+        We specialize in cutting-edge technology services including mobile app development, website development, graphic design, video editing, and more.
+      </p>
+      <div class="parallax-container">
+        <img class="parallax-layer layer-back" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background tech" />
+        <img class="parallax-layer layer-front" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foreground tech" />
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <h2>About Godapple Inc.</h2>
+      <p>
+        Godapple Inc. is a leading tech company committed to delivering innovative digital solutions. Our team excels in mobile and web development, graphic design, video editing, and comprehensive tech services.
+      </p>
+      <p>
+        Founded with a vision to empower businesses through technology, we prioritize quality, creativity, and customer satisfaction.
+      </p>
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Team collaboration" />
+    </section>
+
+    <section id="services" class="section services-section">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Mobile App Development" />
+          <div class="card-content">
+            <h3>Mobile App Development</h3>
+            <p>Building intuitive and high-performance mobile apps for iOS and Android platforms.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Website Development" />
+          <div class="card-content">
+            <h3>Website Development</h3>
+            <p>Creating responsive, modern, and SEO-friendly websites tailored to your business needs.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1653389522479-ccaa5fb2ab2b?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Graphics and motion graphics" />
+          <div class="card-content">
+            <h3>Graphics and motion graphics</h3>
+            <p>Designing stunning visuals, branding materials, and digital graphics to elevate your brand identity.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Video Editing" />
+          <div class="card-content">
+            <h3>Video Editing</h3>
+            <p>Professional video editing services to create engaging and impactful multimedia content.</p>
+          </div>
+        </article>
+         <article class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1661288470388-c5006797bdff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Video Editing" />
+          <div class="card-content">
+            <h3>professional writing and CV Development</h3>
+            <p>Crafting words and resumes that open doors — because your story deserves to be told with power and purpose.</p>
+          </div>
+        </article>
+         <article class="card">
+          <img src="https://images.unsplash.com/photo-1744782211816-c5224434614f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data analysis and visualization" />
+          <div class="card-content">
+            <h3>Data analysis and visualization</h3>
+            <p>Transforming numbers into narratives — where data meets clarity, and insight drives impact.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+      <h2>Our Portfolio</h2>
+      <div class="grid gallery">
+        <div class="gallery-item" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1648201637025-1c77b9be3013?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Advanced Scientific Calculator" />
+          <div class="overlay">Advanced Scientific Calculator</div>
+        </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Religious / Corporate Website" />
+          <div class="overlay">Religious / Corporate Website</div>
+        </div>
+         <div class="gallery-item" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Games development" />
+          <div class="overlay">Games development</div>
+        </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mobile UI Design & Quiz App" />
+          <div class="overlay">Mobile UI Design & Quiz App</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+      <h2>What Our Clients Say</h2>
+      <div class="grid testimonials-grid">
+        <blockquote class="testimonial">
+          <p>"Godapple Inc. transformed our app idea into a sleek, functional product beyond our expectations!"</p>
+          <footer>- Jane Doe</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"The team’s professionalism and creativity in web development helped boost our online presence significantly."</p>
+          <footer>- Michael Smith</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Excellent graphic design services that truly captured our brand’s essence. Highly recommended!"</p>
+          <footer>- Linda Johnson</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> +2349075369690</p>
+      <p><strong>Email:</strong> Godappleinternational@gmail.com</p>
+
+      <!-- <form id="contactForm" class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScL7C_sxRhizHyr3eveLl36KYZv78Eesmte3-ose6uwXqEH0A/viewform?usp=pp_url" method="POST" novalidate>
+        
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required minlength="10"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMessage" class="form-message"></p>
+      </form> -->
+      <div class="contact-form-container">
+ <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScL7C_sxRhizHyr3eveLl36KYZv78Eesmte3-ose6uwXqEH0A/viewform?embedded=true" width="640" height="741" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Godapple Inc. | Phone: +2349075369690 | Email: godappleinternational@gmail.com</p>
+    <a href="https://web.facebook.com/profile.php?id=61565396531319" target="_blank" rel="noopener noreferrer" class="facebook-button">
+  Visit our Facebook Page
+</a>
+
+
+  </footer>
+  <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2349075369690" target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Chat on WhatsApp">
+  <!-- WhatsApp SVG Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="#25D366">
+    <path d="M20.52 3.48A11.94 11.94 0 0 0 12 0C5.373 0 0 5.373 0 12c0 2.115.55 4.083 1.52 5.82L0 24l6.33-1.52A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.22-1.26-6.24-3.48-8.52zM12 21.5a9.49 9.49 0 0 1-4.83-1.32l-.35-.21-3.76.9.9-3.67-.23-.37A9.49 9.49 0 1 1 21.5 12c0 5.23-4.27 9.5-9.5 9.5zm5.3-7.2c-.29-.14-1.71-.85-1.98-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.95 1.15-.17.2-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.44.12-.58.12-.12.29-.3.44-.45.15-.15.2-.25.3-.42.1-.17.05-.32-.02-.45-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.32-.27.25-1.03 1.01-1.03 2.46 0 1.45 1.05 2.85 1.2 3.05.15.2 2.07 3.15 5.02 4.42.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.1 1.71-.7 1.95-1.38.24-.67.24-1.25.17-1.38-.07-.12-.27-.2-.57-.35z"/>
+  </svg>
+</a>
+
+</body>
+</html>
